@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp">
+
+    <ImageView android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toStartOf="@id/guideline15"
+               app:layout_constraintTop_toTopOf="parent"
+               android:src="@drawable/ic_menu_camera"
+               android:id="@+id/img_logo"
+               android:maxHeight="32dp"
+               android:maxWidth="32dp"
+               app:layout_constraintHeight_max="32dp"
+               app:layout_constraintWidth_max="32dp"
+    />
+
+    <TextView android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              app:layout_constraintStart_toEndOf="@id/guideline15"
+              app:layout_constraintEnd_toStartOf="@id/guideline60"
+              app:layout_constraintTop_toTopOf="parent"
+              android:text="BTC | CryptoName"
+              android:gravity="start"
+              android:id="@+id/tv_name"
+              android:textStyle="bold"
+              android:paddingLeft="12dp"
+    />
+
+    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+              app:layout_constraintStart_toEndOf="@id/guideline60"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent"
+              android:text="9871,02 R$"
+              android:textSize="14sp"
+              android:id="@+id/tv_price"
+              android:textColor="@color/colorAccent"
+              android:gravity="end"
+              android:paddingEnd="12dp"
+    />
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline15"
+            app:layout_constraintGuide_percent="0.15"/>
+    <androidx.constraintlayout.widget.Guideline
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline60"
+            app:layout_constraintGuide_percent="0.60"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
